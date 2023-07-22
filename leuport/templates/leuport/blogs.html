@@ -1,0 +1,301 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="icon" sizes="16x16" href="{% static 'images/favicons/favicon.png' %}">
+
+    <!-- Title -->
+    <title> Samuel - Personal Portfolio </title>
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/elegant-font-icons.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jquery.animatedheadline.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/colors/color-2.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+</head>
+<body>
+
+<!--Menu-->
+<div class="main-menu fixed-top">
+    <nav class="nav-menu">
+        <ul class="menu">
+            <li><a href="{% url 'leuport-index' %}" >Home</a></li>
+            <li><a href="{% url 'leuport-about' %}">About</a></li>
+            <li><a href="{% url 'leuport-services' %}">Services</a></li>
+            <li><a href="{% url 'leuport-works' %}" >Works</a></li>
+            <li><a href="{% url 'leuport-blog' %}"class="active" >Blog</a></li>
+            <li><a href="{% url 'leuport-contact' %}" >Contact</a></li>
+        </ul>
+    </nav>
+    <!--hamburger-menu-->
+    <a class="hamburger-menu js-toggle-menu" href="#">
+        <div class="g-lines">
+            <span class="line line-dark"></span>
+            <span class="line line-dark"></span>
+            <span class="line line-dark"></span>
+        </div>
+    </a>
+</div>
+
+    <!-- blog section-->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <p class="section-description bg-base-color">Read a new post</p>
+                        <h2 class="section-title"> Blog Single  </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--Blog-single-->
+                <div class="col-lg-8  wow customFadeInUp slow">
+                    <div class="blog-single">
+                        <div class="thumbnail">
+                            <img src="{% static 'images/blog/3.jpg' %}" alt="">
+                        </div>
+                        <h4 class="title">Daily Habits to increase your productivity levels.</h4>
+                            <p>1. Read 3-pages of a book before bed.
+                                You don’t want to hit the hay when you’re in a bad mood. Or, even worse, after you’ve filled your brain with garbage 
+                                like reality TV. Yes, it’s understandable that you’d like to decompress before going to bed. However, what you do 
+                                before bed can affect how well you wake up and how you feel throughout the day.
+                                
+                                The answer? Read something uplifting and inspiring. Ideally, a biography from someone you 
+                                would consider a hero or mentor. Or, if you prefer a self-help book.
+                                
+                                Since it takes on average 1.7 minutes to read one page, there’s really no excuse not to make 
+                                this nightly ritual.
+                                
+                                2. Start each day with power and intention.
+                                When you want to start a new healthy habit or break out of your comfort zone, 
+                                you first need a strong intention to accomplish that. As Wayne Dyer, author of 
+                                “The Power of Intention,” wrote, “The power of intention is the power to manifest, to create,
+                                 to live a life of unlimited abundance, and to attract into your life the right people at the right moments.”
+                                
+                                In fact, every action you take in life can be guided by an intention. For example, 
+                                whenever you eat, set the intention of eating mindfully. Or, instead of fixating on the desired outcome at work,
+                                 feel focused on feeling fully expressed in what you do.
+                                To get started, simply ask yourself, “What am I aiming to achieve?”.
+                            </p>
+                            <p class="quote">sunt in culpa qui officia deserunt mollit anim id est laborum
+                                .Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                  Ut enim ad minim veniam.
+                            </p>
+
+                            <p>In general, if you can accomplish a task in under a minute, do it right away. For example, 
+                                you can respond to a quick email, schedule a task, or tweet.
+                                Gretchen Rubin, author of “The Happiness Project” says it’s a good way to keep small, nagging tasks under control. 
+                                If you have a lot of little tasks or struggle with anxiety, this could be a helpful daily habit.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <img src="{% static 'images/blog/2.jpg' %}" alt="">
+                                </div>
+                                <div class="col-lg-7">
+                                   <p>
+                                    Every business wants to be recognized globally through the power of the internet, and websites are 
+                                    the medium that expands business globally. So the development of websites and web apps is the initial 
+                                    requirement of business growth. Sometimes the development of websites and web apps is more of a nuisance 
+                                    for the web development company or web developer freelance. So, we list out the best front-end web development 
+                                    tools that help you.Frontend web development tools help you choose color, provide an ideal programming environment, 
+                                    project handling, and collaborate with other developers. Tools make the website development process faster, simpler, 
+                                    and more understandable even for the client. List of best frontend web development we gonna discuss in this article:
+                                    #1 Visual Studio #2 Chrome Devtool #3 HTML5 Boilertool #4 JQuery #5 AngularJS #6 Sublime Text #7 Saas
+                                   </p>
+                                </div>
+                            </div>
+                            <p> These 7 front-end development tools are essential to start your career as a front-end web developer. 
+                                You can also join the online courses and learn from YouTube to become a complete web developer.
+                                The other way to learn web development is can join a web development company as an apprentice 
+                                after completing crash certifications courses from offline institutes. Some of the companies 
+                                also offer paid training to the person who wants to become a web developer.
+                                
+                                
+                            </p>
+                            <p>We already know web development tools help to create web apps and websites. 
+                                Sass abbreviation for Syntactically Awesome Style Sheets. It’s a globally used 
+                                CSS extension language or scripting language. Sass helps to extend the application of CSS. 
+                                It’s all way compatible with all versions of CSS. So you can use it without confronting any obstacle. 
+                                A number of frameworks is built with Sass and Compass, Bourbon, and Susy is a few of them.
+                            </p>
+                            <div class="meta">
+                                <p class="mb-0 ">
+                                    <span><i class="far fa-clock"></i>November 19, 2023</span>
+                                    <span><i class="fas fa-tag"></i>Lifestyle</span>
+                                </p>
+                                <div class="social-links ml-auto">
+                                    <ul class="list-inline">
+                                        <li> Share:</li>
+                                        <li> <a target="_blank" href="https://join.skype.com/invite/e69OodiEyI6c"><i class="fab fa-skype"></i></a></li>
+                                        <li><a target="_blank" href="https://twitter.com/haryourr"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a target="_blank" href="https://github.com/smjei"><i class="fab fa-github"></i></a></li>
+                                        <li><a target="_blank" href="https://linkedin.com/in/adomeh7177"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-author">
+                                <img src="{% static 'images/author.jpg' %}" alt="">
+                                <div class="author">
+                                    <h5>Samuel Adomeh</h5>
+                                    <p>What if I told you that, although these thoughts may be valid, 
+                                        other terms and phrases should be coming to mind? These include conversions, 
+                                        a boost in revenue, calls to action, inbound marketing, and improving customer relationships..</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!--Sidebar-->
+                <div class="col-lg-4">
+                    <!--Search-->
+                    <div class="widget widget-search  wow customFadeInUp delay-0-2s slow" >
+                        <div class="widget-title">
+                            <h5>Search</h5>
+                        </div>
+                        <form action="blog-single.html" class="search-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </div>
+                            <button class="submit-btn" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!--Categories-->
+                    <div class="widget widget-categories  wow customFadeInUp delay-0-3s slow">
+                        <div class="widget-title">
+                            <h5>Categories</h5>
+                        </div>
+                        <ul>
+                            <li class="cat-item d-flex align-items-center">
+                                <a href="#"> Design </a>
+                                <span class="badge badge-pill ml-auto">5</span>
+                            </li>
+                            <li class="cat-item d-flex align-items-center">
+                                <a href="#">Development</a>
+                                <span class="badge  badge-pill ml-auto">15</span>
+                            </li>
+                            <li class="cat-item d-flex align-items-center">
+                                <a href="#">Tutorials</a>
+                                <span class="badge badge-pill ml-auto">4</span>
+                            </li>
+                            <li class="cat-item d-flex align-items-center">
+                                <a href="#">Branding</a>
+                                <span class="badge badge-pill ml-auto">3</span>
+                            </li>
+                            <li class="cat-item d-flex align-items-center">
+                                <a href="#">Lifestyle</a>
+                                <span class="badge badge-pill ml-auto">2</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Recent-post-->
+                    <div class="widget widget-recent-posts wow customFadeInUp delay-0-4s slow">
+                        <div class="widget-title">
+                            <h5>Recent Posts</h5>
+                        </div>
+                        <ul>
+                            <li class="post-item d-flex align-items-center">
+                                <img src="{% static 'images/blog/1.jpg' %}" alt="">
+                                <div class="right">
+                                     <h6>How To become a web designer.</h6>
+                                     <p>September 21, 2023</p>
+                                </div>   
+                            </li>
+                            <li class="post-item d-flex align-items-center">
+                                <img src="{% static 'images/blog/2.jpg' %}" alt="">
+                                <div class="right">
+                                    <h6>7 Most essential frontend development tools.</h6>
+                                    <p>July 29, 2023</p>
+                                </div>
+                            </li>
+                            <li class="post-item d-flex align-items-center">
+                                <img src="{% static 'images/blog/4.jpg' %}" alt="">
+                                <div class="right">
+                                    <h6>15 Quick Tips That Will Help You Get Hired Fast.</h6>
+                                    <p>August 1, 2023</p>
+                                </div>
+                            </li>
+                            <li class="post-item d-flex align-items-center">
+                                <img src="{% static 'images/blog/6.jpg' %}" alt="">
+                                <div class="right">
+                                    <h6>How To Create Your First UX Design Portfolio?</h6>
+                                    <p>August 21, 2023</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                
+
+                    <!--tags-->
+                    <div class="widget widget-tags wow customFadeInUp delay-0-5s slow" >
+                        <div class="widget-title">
+                            <h5>Tags</h5>
+                        </div>
+                        <ul class="list-inline">
+                            <li>Productivity</li>
+                            <li>Business</li>
+                            <li>Tools</li>
+                            <li>Levels</li>
+                            <li>Daily Habits</li>
+                            <li>Bussness</li>
+                            <li>Tips</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--loading -->
+    <div class="loading">
+        <div class="circle"></div>
+    </div>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery-3.5.0.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    <!-- JS Plugins  -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mixitup.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/ajax-contact.js' %}"></script>
+    <script src="{% static 'js/jquery.animatedheadline.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="icon" sizes="16x16" href="{% static 'images/favicons/favicon.png' %}">
+
+    <!-- Title -->
+    <title> Samuel - Personal Portfolio </title>
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/elegant-font-icons.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jquery.animatedheadline.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/colors/color-2.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+</head>
+
+<body>
+
+<!--Menu-->
+<div class="main-menu fixed-top">
+    <nav class="nav-menu">
+        <ul class="menu">
+            <li><a href="{% url 'leuport-index' %}">Home</a></li>
+            <li><a href="{% url 'leuport-about' %}">About</a></li>
+            <li><a href="{% url 'leuport-services' %}"class="active">Services</a></li>
+            <li><a href="{% url 'leuport-works' %}" >Works</a></li>
+            <li><a href="{% url 'leuport-blog' %}" >Blog</a></li>
+            <li><a href="{% url 'leuport-contact' %}" >Contact</a></li>
+        </ul>
+    </nav>
+    <!--hamburger-menu-->
+    <a class="hamburger-menu js-toggle-menu " href="#">
+        <div class="g-lines">
+            <span class="line line-dark"></span>
+            <span class="line line-dark"></span>
+            <span class="line line-dark"></span>
+        </div>
+    </a>
+</div>
+
+    <!--Servives section-->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <p class="section-description bg-base-color">Services i offer to my clients</p>
+                        <h2 class="section-title">My Services</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-20 mt-40">
+                <!--service-item-->
+                <div class="col-lg-4 col-md-6 wow customFadeInUp delay-0-2s slow">
+                    <div class="service-item">
+                        <div class="icon bg-base-color">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="content">
+                            <h5> DashBoard Development - Google Looker Studio | Power Bi | Tableau </h5>
+                            <p>
+                                Keep it focused and defined, set a good data foundation and keeping interface clean, understandable, and consistent.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--service-item-->
+                <div class="col-lg-4 col-md-6 wow customFadeInUp delay-0-3s slow">
+                    <div class="service-item">
+                        <div class="icon bg-base-color">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="content">
+                            <h5> Continuous Integration & Continuous Development- (Azure DevOps) </h5>
+                            <p>
+                               Git, Docker, Terraform, SonarQube, Kubernetes, ARM Templates & Bicep, Ansible, Lens, Azure computer services to deploy an efficient working environment .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--service-item-->
+                <div class="col-lg-4 col-md-6 wow customFadeInUp delay-0-4s slow">
+                    <div class="service-item ">
+                        <div class="icon bg-base-color">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="content">
+                            <h5> Data Analysis - Cleaning | Scraping | Analyzing | API Integration</h5>
+                            <p>
+                                Automating the data collection process, collecting data from multiple sources, and using different Python libraries to clean data and analyze data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--service-item-->
+                <div class="col-lg-4 col-md-6 wow customFadeInUp delay-0-5s slow">
+                    <div class="service-item ">
+                        <div class="icon bg-base-color">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <div class="content">
+                            <h5> Scripting & Automation </h5>
+                            <p>
+                                Simplicity and intuitiveness to Interacting with APIs for Web scraping, Consolidating tasks, Organizing data, and automation for repetitive tasks .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--service-item-->
+                <div class="col-lg-4 col-md-6 wow customFadeInUp delay-0-6s slow">
+                    <div class="service-item ">
+                        <div class="icon bg-base-color">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Cloud Infrastructure and provisioning </h5>
+                            <p>
+                                Allocating  cloud service provider’s resources to a customer ( Azure, AWS, Google Cloud). SaaS, PaaS, IaaS, FaaS, 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--service-item-->
+                <div class="col-lg-4 col-md-6 wow customFadeInUp delay-0-7s slow">
+                    <div class="service-item">
+                        <div class="icon bg-base-color">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="content">
+                            <h5>IT Consultant </h5>
+                            <p>
+                                Help clients to make technology purchases or strategy decisions and resolve technology challenges and also saving cost and delivering a top-notch solution to customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!--Testimonials-->
+            <div class="section-sub-heading">
+                <h4 class="section-sub-title">Testimonials</h4>
+            </div>
+            <div class="row  testimonials mb-50">
+                <div class="col-lg-12">
+                    <div class="owl-carousel">
+                        <!--testimonial-item-->
+                        <div class="testimonials-item">
+                            <div class="image">
+                                <img src="{% static 'images/testimonials/1.jpg' %}" alt="">
+
+
+                            </div>
+                            <h6>Donia Martin</h6>
+                            <p class="job">Product Design </p>
+            
+                            <p>
+                                Fantastic to work with. Great Job. Thank you.
+                            </p>
+                            <div class="icon bg-base-color">
+                                <span class="icon_quotations"></span>
+                            </div>
+                        </div>
+            
+            
+                        <!--testimonial-item-->
+                        <div class="testimonials-item">
+                            <div class="image">
+                                <img src="{% static 'images/testimonials/2.jpg' %}" alt="">
+                            </div>
+                            <h6>Alex Smith</h6>
+                            <p class="job">Web Developer</p>
+                            <p>
+                                I noticed last week that you restructured our shared Google Sheet with conditional formatting that made it easier for me 
+                                to understand and read the data. I appreciate you taking the initiative to learn how to do that.
+                            </p>
+                            <div class="icon bg-base-color">
+                                <span class="icon_quotations"></span>
+                            </div>
+                        </div>
+            
+            
+                        <!--testimonial-item-->
+                        <div class="testimonials-item">
+                            <div class="image">
+                                <img src="{% static 'images/testimonials/3.jpg' %}" alt="">
+                            </div>
+                            <h6>Engin Dongo</h6>
+                            <p class="job"> Mobile Developer </p>
+                            <p>
+                                I know this goal wasn’t easy. How you managed to set it and systematically work towards it until you achieved it 
+                                truly speaks to your intelligence, tenacity, and perseverance. We arelucky to have you as part of the team.
+                            </p>
+            
+                            <div class="icon bg-base-color">
+                                <span class="icon_quotations"></span>
+                            </div>
+                        </div>
+            
+                        <!--testimonial-item-->
+                        <div class="testimonials-item">
+                            <div class="image">
+                                <img src="{% static 'images/testimonials/4.jpg' %}" alt="">
+                            </div>
+                            <h6>Zahra Salah</h6>
+                            <p class="job"> UI/UX designer </p>
+                            <p>
+                                If you hadn’t found the flaws in our UI/UX design, I think we would be in big trouble right now.
+                            </p>
+                            <div class="icon bg-base-color">
+                                <span class="icon_quotations"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Pricing plans-->
+            <div class="section-sub-heading">
+                <h4 class="section-sub-title"> Choose a Plan</h4>
+            </div>
+            
+            <div class="row mb-50">
+                <div class="col-lg-4 wow customFadeInUp delay-0-2s slow">
+                    <!--pricing-item-->
+                    <div class="pricing-item">
+                        <div class="content">
+                            <h5>Basic</h5>
+                            <div class="price">
+                                <h3>100
+                                    <span>$/Pro</span>
+                                </h3>
+                            </div>
+                            <ul>
+
+                                
+                                <li>1 Day Delivery. </li>
+                                <li>1 Revision.</li>
+                                <li>4 Graphs/Charts. </li>
+                                <li>Data Source Connectivity. </li>
+                                <li>Email support</li>
+                            </ul>
+                            <a target="_blank" href="https://www.upwork.com/services/product/development-it-power-bi-dashboard-with-an-outstanding-design-and-features-1531285059157168128" class="btn-custom"> Get Basic</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow customFadeInUp delay-0-4s slow">
+                    <!--pricing-item-->
+                    <div class="pricing-item">
+                        <div class="content">
+                            <h5>Standard</h5>
+                            <div class="price">
+                                <h3>500
+                                    <span>$/Pro</span>
+                                </h3>
+                            </div>
+                            <ul>
+                                <li>2 Days Delivery.. </li>
+                                <li>2 Revisions.</li>
+                                <li>10 Graphs/Charts.. </li>
+                                <li>2 Variation. </li>
+                                <li>Data Source Connectivity</li>
+                            </ul>
+                            <a target="_blank" href="https://www.upwork.com/services/product/development-it-power-bi-dashboard-with-an-outstanding-design-and-features-1531285059157168128" class="btn-custom"> Get Standard</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow customFadeInUp delay-0-6s slow">
+                    <!--pricing-item-->
+                    <div class="pricing-item">
+                        <div class="content">
+                            <h5>Premium</h5>
+                            <div class="price">
+                                <h3>1000
+                                    <span>$/Pro</span>
+                                </h3>
+                            </div>
+                            <ul>
+                                <li>7 Days Delivery.. </li>
+                                <li>4 Revisions.</li>
+                                <li>30 Graphs/Charts.. </li>
+                                <li>3 Variation. </li>
+                                <li>Data Source Connectivity</li>
+                            </ul>
+                            <a target="_blank" href="https://www.upwork.com/services/product/development-it-power-bi-dashboard-with-an-outstanding-design-and-features-1531285059157168128" class="btn-custom"> Get Premium</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--Clients-->
+                <div class="section-sub-heading">
+                    <h4 class="section-sub-title">Our Clients</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="clients-item">
+                            <img src="{% static 'images/clients/client_1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="clients-item">
+                            <img src="{% static 'images/clients/client_2.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="clients-item">
+                            <img src="{% static 'images/clients/client_3.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="clients-item">
+                            <img src="{% static 'images/clients/client_4.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="clients-item">
+                            <img src="{% static 'images/clients/client_1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="clients-item">
+                            <img src="{% static 'images/clients/client_2.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+
+    <!--loading -->
+    <div class="loading">
+        <div class="circle"></div>
+    </div>
+
+ 
+
+
+
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="{% static 'js/jquery-3.5.0.min.js' %}"></script>
+     <script src="{% static 'js/popper.min.js' %}"></script>
+     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+     
+     <!-- JS Plugins  -->
+     <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+     <script src="{% static 'js/jquery.mixitup.js' %}"></script>
+     <script src="{% static 'js/wow.min.js' %}"></script>
+     <script src="{% static 'js/ajax-contact.js' %}"></script>
+     <script src="{% static 'js/jquery.animatedheadline.min.js' %}"></script>
+     <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

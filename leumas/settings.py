@@ -30,7 +30,7 @@ DEBUG = True
 
 APPEND_SLASH=False
 
-ALLOWED_HOSTS = ['127.0.0.1','adomeh-portfolio.onrender.com', 'www.adotech.pl', 'adotech.pl']
+ALLOWED_HOSTS = ['127.0.0.1','adomey-portfolio.onrender.com', 'www.adomey.com', 'adomeh.com']
 
 
 
